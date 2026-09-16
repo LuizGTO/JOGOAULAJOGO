@@ -1,9 +1,9 @@
 {
     "version": 1,
-    "name": "player",
+    "name": "PlayerControls",
     "maps": [
         {
-            "name": "Player",
+            "name": "Movement",
             "id": "24e1cadc-4af2-4937-a591-9db37bcc1dee",
             "actions": [
                 {
@@ -23,6 +23,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "950cd52a-d802-4148-b6c5-acd2048538ef",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "344fc1ed-46fe-4ee7-bc17-9b111095c111",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -40,7 +58,7 @@
                 {
                     "name": "up",
                     "id": "c99e1722-66c8-4362-96d2-d4f5e1cab7aa",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -51,7 +69,7 @@
                 {
                     "name": "down",
                     "id": "3a8368c1-edf2-40cc-bd26-988656c384ca",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -62,7 +80,7 @@
                 {
                     "name": "left",
                     "id": "b3505613-3454-4c5d-b350-1b919b478870",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<NimbusGamepadHid>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -73,7 +91,7 @@
                 {
                     "name": "right",
                     "id": "681a5ebc-f237-4c71-8c6c-50131e09693d",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -100,6 +118,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51188cd4-c294-4ea0-83cf-5f0f62227812",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da1ad5d4-64c0-41a9-af74-bc39e42cd857",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
