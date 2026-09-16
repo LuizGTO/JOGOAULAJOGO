@@ -166,7 +166,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""b3505613-3454-4c5d-b350-1b919b478870"",
-                    ""path"": ""<NimbusGamepadHid>/buttonSouth"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
